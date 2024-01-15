@@ -15,23 +15,26 @@
       .header {
         background-color: rgb(227 190 152);
         height: 400px;
+        position: relative;
       }
       .intro {
-        max-width: 698px;
+        max-width: 50%;
         position: absolute;
-        right: 254px;
+        right: 4%;
+        top: 20%;
         background: #f7ebe2;
         border-radius: 55px 152px 86px 7px;
         padding: 30px;
-        top: 504px;
       }
       .content1 {
         font-size: 20px;
-        padding-bottom: 100px;
-        padding-top: 100px;
+        padding-bottom: 10%;
+        padding-top: 10%;
+        position: relative;
       }
       .footer {
         background-color: rgb(53, 53, 53);
+        position: relative;
       }
       .footer div {
         color: rgb(255, 255, 255);
@@ -42,7 +45,7 @@
       h1 {
         display: inline;
         position: relative;
-        left: 299px;
+        left: 20%;
         top: 171px;
         color: white;
         font-size: 49px;
@@ -50,7 +53,7 @@
       h2 {
         display: inline;
         position: relative;
-        left: 92px;
+        left: 6%;
         top: 208px;
         color: #fff1d5;
       }
@@ -58,49 +61,115 @@
         text-decoration: none;
         color: #58483d;
         font-size: 20px;
-        margin: 34px;
+        margin: 3%;
         display: inline;
       }
       a {
         color: #69a2a5;
       }
       .header img {
-        width: 579px;
-        height: 432px;
+        width: 35%;
+        height: 104%;
         border-radius: 277px 286px 20px 189px;
         object-fit: cover;
         float: right;
         position: relative;
-        right: 147px;
+        right: 5%;
         top: 20px;
       }
       .content2 {
         background-color: #5f8385;
         height: 392px;
+        position: relative;
       }
       .content2 img {
-        width: 462px;
-        height: 370px;
+        width: 30%;
+        height: 90%;
         border-radius: 282px 259px 162px 182px;
         object-fit: cover;
         float: right;
-        margin-right: 156px;
+        margin-right: 5%;
         margin-top: -19px;
       }
       .content2 div {
         color: white;
-        max-width: 614px;
+        max-width: 40%;
         position: absolute;
-        top: 1233px;
-        left: 217px;
+        top: 114px;
+        left: 9%;
+      }
+      .transparent {
+        width: 20%;
+        margin-left: 10%;
+        border-radius: 0px 0px 20% 20%;
+      }
+      .top {
+        position: absolute;
+        top: 40%;
+        right: 39px;
+        background: white;
+        padding: 8px;
+        text-decoration: none;
+        border-radius: 17px;
+        box-shadow: #0000002e 5px 9px;
+      }
+      .menu {
+        padding-top: 40px;
+        padding-left: 8%;
+      }
+      @media screen and (max-width: 780px) {
+        .header {
+          height: 474px;
+        }
+        .header img {
+          width: 75%;
+          height: 44%;
+          right: 13%;
+          top: 27%;
+        }
+        h1 {
+          top: 12%;
+        }
+        h2 {
+          left: -13%;
+          top: 23%;
+        }
+        .intro {
+          left: 6%;
+          font-size: 16px;
+          max-width: 63%;
+        }
+        .content1 {
+          padding-bottom: 314%;
+          padding-top: 116%;
+        }
+        .transparent {
+          display: none;
+        }
+        .content2 img {
+          width: 76%;
+          height: 40%;
+          margin-right: 13%;
+          margin-top: -25%;
+        }
+        .content2 div {
+          max-width: 85%;
+          top: 27%;
+          left: 9%;
+        }
+        .top {
+          top: -16%;
+        }
       }
     </style>
   </head>
   <body>
     <div class="header" id="Header">
-      <a href="#Header" style="position: absolute; left: 48px">Home</a>
-      <a href="#intro" style="position: absolute; left: 150px">Intro</a>
-      <a href="#Hafez" style="position: absolute; left: 250px">Hafez</a>
+      <div class="menu">
+        <a href="#Header">Home</a>
+        <a href="#intro">Intro</a>
+        <a href="#Hafez">Hafez</a>
+      </div>
 
       <h1>Tomb of Hafez</h1>
       <h2>(Hāfezieh)</h2>
@@ -111,9 +180,9 @@
     </div>
     <div class="content1" id="intro">
       <img
+        class="transparent"
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/682/original/12259.png?1705298735"
         alt=""
-        style="width: 354px; margin-left: 122px; border-radius: 0px 0px 20% 20%"
       />
       <div class="intro">
         <h3>Introduction</h3>
@@ -166,20 +235,7 @@
           >Linkedin</a
         >
       </div>
-      <a
-        href="#Header"
-        style="
-          position: absolute;
-          top: 1538px;
-          right: 39px;
-          background: white;
-          padding: 8px;
-          text-decoration: none;
-          border-radius: 17px;
-          box-shadow: #0000002e 5px 9px;
-        "
-        >Top🔼</a
-      >
+      <a class="top" href="#Header">Top🔼</a>
     </div>
     <script></script>
   </body>
