@@ -16,10 +16,28 @@
         background-color: rgb(227 190 152);
         height: 400px;
       }
+      .intro {
+        max-width: 698px;
+        position: absolute;
+        right: 254px;
+        background: #f7ebe2;
+        border-radius: 55px 152px 86px 7px;
+        padding: 30px;
+        top: 504px;
+      }
       .content1 {
-        margin: 50px;
         font-size: 20px;
-        margin: 30px;
+        padding-bottom: 100px;
+        padding-top: 100px;
+      }
+      .footer {
+        background-color: rgb(53, 53, 53);
+      }
+      .footer div {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        height: 80px;
+        padding-top: 60px;
       }
       h1 {
         display: inline;
@@ -36,53 +54,132 @@
         top: 208px;
         color: #fff1d5;
       }
-      a {
+      .header a {
         text-decoration: none;
         color: #58483d;
         font-size: 20px;
         margin: 34px;
         display: inline;
       }
+      a {
+        color: #69a2a5;
+      }
+      .header img {
+        width: 579px;
+        height: 432px;
+        border-radius: 277px 286px 20px 189px;
+        object-fit: cover;
+        float: right;
+        position: relative;
+        right: 147px;
+        top: 20px;
+      }
+      .content2 {
+        background-color: #5f8385;
+        height: 392px;
+      }
+      .content2 img {
+        width: 462px;
+        height: 370px;
+        border-radius: 282px 259px 162px 182px;
+        object-fit: cover;
+        float: right;
+        margin-right: 156px;
+        margin-top: -19px;
+      }
+      .content2 div {
+        color: white;
+        max-width: 614px;
+        position: absolute;
+        top: 1233px;
+        left: 217px;
+      }
     </style>
   </head>
   <body>
-    <div class="header">
-      <a href="" style="position: absolute; left: 48px">intro</a>
-      <a href="" style="position: absolute; left: 150px">details</a>
+    <div class="header" id="Header">
+      <a href="#Header" style="position: absolute; left: 48px">Home</a>
+      <a href="#intro" style="position: absolute; left: 150px">Intro</a>
+      <a href="#Hafez" style="position: absolute; left: 250px">Hafez</a>
 
       <h1>Tomb of Hafez</h1>
       <h2>(Hāfezieh)</h2>
       <img
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/683/original/sUJ6pUS5J3XCI0zoCLa3759.jpeg?1705299379"
         alt="Tomb of Hafez"
-        style="
-          width: 579px;
-          height: 432px;
-          border-radius: 277px 286px 20px 189px;
-          object-fit: cover;
-          float: right;
-          position: relative;
-          right: 147px;
-          top: 20px;
-        "
       />
     </div>
-    <div class="content1">
-      <div>Introduction</div>
-      <div>Country:Iran</div>
-      <div>City:Shiraz</div>
-      <div>
-        If one of the things Iran is known for is its rich literature, Hafez is
-        probably half the reason why! As if overflown with all the symbolic and
-        sublime spirit of his verses, the Tomb of Hafez (also known as Hāfezieh)
-        fills you up with an aura of peace, romance, and poetry. As one of the
-        most popular attractions among Iranians, the place where the celebrated
-        poet resting there is one reason why the City of Shiraz is known as the
-        city of rose gardens and poets. Stay with me to find out how the
-        greatness of Hafez’s poetry and worldview, the architectural beauty of
-        his mausoleum, and the charm of the garden where it is located have
-        created strong ties with Iranian culture.
+    <div class="content1" id="intro">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/682/original/12259.png?1705298735"
+        alt=""
+        style="width: 354px; margin-left: 122px; border-radius: 0px 0px 20% 20%"
+      />
+      <div class="intro">
+        <h3>Introduction</h3>
+
+        <div style="margin-bottom: 10px">
+          <span style="font-weight: bold">Country: </span>Iran
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/687/original/Flag_of_Iran.svg.png?1705305095"
+            alt=""
+            style="width: 40px; border-radius: 3px; display: inline"
+          />
+        </div>
+
+        <div><span style="font-weight: bold">City: </span>Shiraz</div>
+        <div>
+          The Tomb of Hafez (Persian: آرامگاه حافظ), commonly known as Hāfezieh
+          (حافظیه), are two memorial structures erected in the northern edge of
+          Shiraz, Iran, in memory of the celebrated Persian poet Hafez. The open
+          pavilion structures are situated in the Musalla Gardens on the north
+          bank of a seasonal river and house the marble tomb of Hafez. The
+          present buildings, built in 1935 and designed by the French architect
+          and archaeologist André Godard, are at the site of previous
+          structures, the best-known of which was built in 1773. The tomb, its
+          gardens, and the surrounding memorials to other great figures are a
+          focus of tourism in Shiraz.
+        </div>
       </div>
+    </div>
+    <div class="content2" id="Hafez">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/686/original/hafezieh-shiraz-2020.jpg?1705304453"
+        alt=""
+      />
+      <div>
+        <h3 style="font-size: 30px; margin-top: 0">🌹Hafez</h3>
+        Hafez was born in Shiraz in 1315 and died there in 1390. A beloved
+        figure of the Iranian people, who learn his verses by heart, Hafez was
+        prominent in his home town and held a position as the court poet. Hafez
+        knew the Holy Quran by heart, and the scripture was his inspirational
+        muse.
+      </div>
+    </div>
+    <div class="footer">
+      <div>
+        Coded By Fatemeh Ahmadi, visit my
+        <a target="_blank" href="https://github.com/fatemeh133">GitHub</a> and
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/fatemeh-ahmadi-profile?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          >Linkedin</a
+        >
+      </div>
+      <a
+        href="#Header"
+        style="
+          position: absolute;
+          top: 1538px;
+          right: 39px;
+          background: white;
+          padding: 8px;
+          text-decoration: none;
+          border-radius: 17px;
+          box-shadow: #0000002e 5px 9px;
+        "
+        >Top🔼</a
+      >
     </div>
     <script></script>
   </body>
